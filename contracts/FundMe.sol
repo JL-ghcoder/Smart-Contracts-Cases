@@ -17,10 +17,10 @@ contract FundMe {
     address public owner;
     AggregatorV3Interface public priceFeed;
     
-    constructor(address _priceFeed) public {
-        priceFeed = AggregatorV3Interface(_priceFeed);
-        owner = msg.sender;
-    }
+//    constructor(address _priceFeed) public {
+//        priceFeed = AggregatorV3Interface(_priceFeed);
+//        owner = msg.sender;
+//    }
 
     function fund() public payable {
         uint256 minimumUSD = 50 * 10**18;
